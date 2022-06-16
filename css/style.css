@@ -1,0 +1,111 @@
+
+body{
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    max-width: 640px;
+    justify-content: center;
+    line-height: 80%;
+}
+
+a:link, a:active, a:visited { 
+    color: #3475dd;
+    text-decoration:none; 
+} 
+
+ul{
+    padding: 0;
+}
+
+ul li{
+    color: #3475dd;
+}
+
+main{
+    border: 1px solid #E3E3E3;
+    box-shadow: 1px 1px 10px #676767;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/*Barre notification et marquer comme lu*/
+
+#notification, #notification div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#notification{
+    justify-content: space-between;
+}
+
+#notification, #voir {
+    font-weight: 600;
+}
+
+#notification div a:hover, #voir a:hover {
+    border-bottom: 2px solid #3475dd;
+    padding-bottom: 5px;
+}
+
+/*Article publié*/
+
+li:before{ 
+    content:'\00b7'; 
+    font-size:100px; 
+    padding-top: 20px;
+}
+
+.publication__article{
+    display: flex;
+    justify-content: space-around;
+}
+
+.publication__liste{
+    padding: 0 20px 0 10px;
+    display: flex;
+}
+
+.publication__liste:hover{
+    background-color: #f6f6f6;
+    border-radius: 10px;
+}
+
+.publication__texte h3{
+    line-height: 140%;
+    color: #000000;
+}
+
+.publication__texte h3:hover{
+    color: #3475dd;
+}
+
+.publication__texte p{
+    font-size: 14px;
+    color: #676767;
+}
+
+.publication__icone{
+    background-color: #0072fa;
+    padding: 6px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+/*Tous voir*/
+
+#voir {
+    border-top: 3px solid #E3E3E3;
+    padding-top: 20px;
+}
+
+
+/*Mobile*/
+
+@media screen and (max-width:414px) {
+
+body{
+    font-size:100%;
+}
+
+}
